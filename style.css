@@ -124,10 +124,10 @@ section.slider{
     background-image: url(images/slider/slide1.jpg);
     -webkit-background-size: cover;
     background-size: cover;
-    -webkit-transition: all 2s ease-out 0s;
-    -moz-transition: all 2s ease-out 0s;
-    -o-transition: all 2s ease-out 0s;
-    transition: all 2s ease-out 0s;
+    -webkit-transition: all 1s ease-out 0s;
+    -moz-transition: all 1s ease-out 0s;
+    -o-transition: all 1s ease-out 0s;
+    transition: all 1s ease-out 0s;
 }
 .slider .slider-content{
     margin-top: 390px;
@@ -897,6 +897,8 @@ footer button#up{
         margin-top: 50px;
         width: 12px;
         height: 12px;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
     .slider .slider-content #buy{
         width: 100px;
