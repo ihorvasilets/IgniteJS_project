@@ -12,9 +12,13 @@
     font-family: "oswald bold";
     src: url(fonts/oswald-bold.ttf);
 }
+div.container{
+    min-width: 300px !important;
+}
 
 h1{
     font: 66px  "oswald bold", sans-serif;
+    margin-top: 68px;
     line-height: 120%;
     color: white;
     text-align: center;
@@ -93,6 +97,11 @@ hr{
 }
 .header-bg header li > span{
     color: white;
+    cursor: pointer;
+
+}
+.header-bg header li > span:hover{
+    color: #ffe600;
 }
 .header-bg header button{
     width: 40px;
@@ -115,6 +124,10 @@ section.slider{
     background-image: url(images/slider/slide1.jpg);
     -webkit-background-size: cover;
     background-size: cover;
+    -webkit-transition: all 2s ease-out 0s;
+    -moz-transition: all 2s ease-out 0s;
+    -o-transition: all 2s ease-out 0s;
+    transition: all 2s ease-out 0s;
 }
 .slider .slider-content{
     margin-top: 390px;
@@ -124,10 +137,6 @@ section.slider{
 }
 .slider .slider-content .content-nav{
     text-align: center;
-}
-
-.slider .slider-content h1{
-    margin-top: 68px;
 }
 
 .slider .slider-content .content-nav .prev{
@@ -196,6 +205,10 @@ section.slider{
     background-color: #ffe600;
     background-repeat: no-repeat;
     background-position: center center;
+    -webkit-transition: all 0.5s ease-out 0s;
+    -moz-transition: all 0.5s ease-out 0s;
+    -o-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
 }
 /*--- HOW WE DO IT -------------------------------------------------*/
 .how-we-do{
@@ -226,6 +239,10 @@ section.slider{
     height: 45px;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .how-we-do .stages h4{
     margin-top: 30px;
@@ -264,7 +281,8 @@ section.slider{
     padding-left: 0;
 }
 .works > .container .filter li span{
-color: #515151;
+    color: #515151;
+    cursor: pointer;
 }
 
 
@@ -282,6 +300,7 @@ color: #515151;
     background-color: rgba(255, 230, 0, 0.41);
     text-align: center;
     text-transform: uppercase;
+    display: none;
 
 }
 
@@ -471,7 +490,172 @@ color: #515151;
     display: none;
 }
 
+.team .skills-bg{
+    background-color: #131a1d;
+    text-align: center;
+}
 
+.team .info-mid h2, .team .info-mid p{
+    color: white;
+}
+.team .info-mid h2{
+    margin-top: 62px;
+    margin-bottom: 16px;
+}
+
+.team .info-bottom canvas, .team .info-bottom h4{
+    color: #ffe600;
+    font-family: "oswald regular";
+}
+.team .info-bottom canvas{
+    font: 35px "oswald light", sans-serif;
+}
+.team .info-bottom h4{
+    margin-bottom: 62px;
+}
+/*--- CLIENTS -------------------------------------------------*/
+.clients{
+    text-align: center;
+}
+.clients .head p{
+    margin-bottom: 70px;
+}
+.clients .clients-btn .prev, .clients .clients-btn .next{
+    width: 30px;
+    height: 30px;
+    margin-top: 70px;
+    margin-bottom: 62px;
+    background-color: #ffe600;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*--- REVIEWS -------------------------------------------------*/
+section.reviews{
+    background-color: #131a1d;
+    color: white;
+}
+section.reviews #review{
+    margin-top: 58px;
+}
+section.reviews ul{
+    margin-bottom: 58px;
+}
+/*--- CONTACTS -------------------------------------------------*/
+.contacts{
+    text-align: center;
+}
+.contacts .head p{
+    margin-bottom: 66px;
+}
+
+.contacts .info h4{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contacts .info p{
+    margin-bottom: 58px;
+}
+.contacts p.mail img{
+    display: none;
+}
+
+/*--- MESSAGE-FORM -------------------------------------------------*/
+.message-form{
+    background-color: #131a1d;
+    text-align: center;
+}
+.message-form h2, .message-form p, .message-form input, .message-form textarea{
+    color: white;
+}
+.message-form h2, .message-form p{
+    text-align: center;
+}
+.message-form h2{
+    margin-top: 62px;
+}
+.message-form input, .message-form textarea{
+    width: 100%;
+    background-color: #131a1d;
+    border: 1px solid white;
+    height: 58px;
+
+}
+.message-form input{
+    margin-top: 62px;
+}
+.message-form textarea{
+    height: 216px;
+    margin-top: 28px;
+}
+
+.message-form input#submit{
+    width: 204px;
+    height: 58px;
+    margin-top: 28px;
+    margin-bottom: 68px;
+    background-color: #ffe600;
+    border:none;
+    color: black;
+    font: 15px "oswald bold", sans-serif;
+    text-transform: uppercase;
+}
+
+.message-form input::-webkit-input-placeholder, .message-form textarea::-webkit-input-placeholder {
+    color: white;
+    font: 15px "oswald light", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.message-form input::-moz-placeholder, .message-form textarea::-moz-placeholder {
+    color: white;
+    font: 15px "oswald light", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.message-form input:-ms-input-placeholder, .message-form textarea:-ms-input-placeholder {
+    color: white;
+    font: 15px "oswald light", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.message-form input:-moz-placeholder, .message-form textarea:-moz-placeholder {
+    color: white;
+    font: 15px "oswald light", sans-serif;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+/*--- FOOTER -------------------------------------------------*/
+footer{
+    background-color: #131316;
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+footer p span{
+    color: #ffe600;
+}
+footer p a{
+    margin-left: 7px;
+    margin-right: 7px;
+}
+footer button#up{
+    width: 58px;
+    height: 58px;
+    margin-top: 30px;
+    border: none;
+    background-color: #ffe600;
+    background-image: url(images/footer-up.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+
+}
 
 /*--- GLOBAL STYLES -------------------------------------------------*/
 
@@ -515,11 +699,28 @@ color: #515151;
         text-transform: uppercase;
         color: #ffe600;
     }
+    h1{
+        font-size: 50px;
+        margin-top: 55px;
+    }
+
     section.slider{
         height: 60vw;
     }
     .slider .slider-content{
         margin-top: 20vw;
+    }
+    .slider .slider-content{
+        height: 300px;}
+    .slider .slider-content .content-nav .prev, .slider .slider-content .content-nav .next{
+        margin-top: 150px;
+    }
+    .slider .slider-content #buy{
+        width: 210px;
+        height: 50px;
+        margin-top: 22px;
+        font-size: 18px;
+
     }
 
 
@@ -557,6 +758,24 @@ color: #515151;
         text-transform: uppercase;
         color: #ffe600;
     }
+    h1{
+        font-size: 40px;
+        margin-top: 30px;
+    }
+    .slider .slider-content{
+        height: 250px;
+    }
+    .slider .slider-content .content-nav .prev, .slider .slider-content .content-nav .next{
+        margin-top: 120px;
+    }
+
+    .slider .slider-content #buy{
+        width: 190px;
+        height: 45px;
+        margin-top: 20px;
+        font-size: 16px;
+
+    }
     .works .preview .portfolio{
         height: 25vw;
     }
@@ -577,7 +796,30 @@ color: #515151;
         margin-top: 10px;
         }
 
-
+    .header-bg header ul{
+        position: absolute;
+        top: 25px;
+        right: 15px;
+        padding-left: 0;
+        border: 1px solid #ffe600;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background-color: rgba(255, 230, 0, 0.41);
+    }
+    .header-bg header ul li:first-child{
+        margin-left: 0;
+    }
+    .header-bg header ul li{
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 5px;
+        text-align: center;
+        list-style-type: none;
+        height: 20px;
+        float: none;
+        width: 100px;
+    }
 
     .header-bg header ul{
         display: none;
@@ -586,13 +828,43 @@ color: #515151;
         display: block;
         
     }
+    h1{
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    .slider .slider-content{
+        height: 180px;
+    }
+    .slider .slider-content .content-nav .prev, .slider .slider-content .content-nav .next{
+        margin-top: 85px;
+    }
+    .slider .slider-content #buy{
+        width: 130px;
+        height: 30px;
+        margin-top: 10px;
+        font-size: 12px;
+
+    }
+    .works > .container .filter ul{
+        width: 450px
+    }
+    .works > .container .filter li{
+        margin-left: 32px;
+        padding-left: 0;
+        font-size: 13px;
+    }
     .works .preview .portfolio{
         height: 37vw;
     }
     .works .preview .portfolio .yellow{
         padding-top: 12vw;
     }
-
+    .about .description .about-btm{
+        margin-top: 60px;
+    }
+    .team .team-bg-top .members .white-bg{
+        height: 140px;
+    }
     .team .team-bg-top .members .member{
         cursor: pointer;
         height: 20vw;
@@ -600,8 +872,83 @@ color: #515151;
     .team .members #label1, .team .members #label2, .team .members #label3, .team .members #label4 {
         left: 35%;
     }
+    .message-form input{
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 480px) {
+    h1{
+        font-size: 20px;
+        margin-top: 15px;
+    }
+    .slider .slider-content{
+        margin-top: 25vw;
+    }
+
+    .slider .slider-content{
+        height: 110px;
+    }
+    .slider .slider-content .slide-next{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .slider .slider-content .content-nav .prev, .slider .slider-content .content-nav .next{
+        margin-top: 50px;
+        width: 12px;
+        height: 12px;
+    }
+    .slider .slider-content #buy{
+        width: 100px;
+        height: 20px;
+        margin-top: 0;
+        font-size: 10px;
+
+    }
+    .works > .container .filter ul{
+        width: 100%;
+        height: auto;
+    }
+    .works > .container .filter li:first-child{
+        width: 100%;
+    }
+    .works > .container .filter li:hover{
+        background-color: #ffe600;
+    }
+
+    .works > .container .filter li span:hover{
+        color: white;
+    }
+    .works > .container .filter li span{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .works > .container .filter li{
+        width: 50%;
+        float: left;
+        list-style-type: none;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        font-size: 13px;
+        border: 1px solid #ffe600;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        margin-bottom: 5px;
+    }
+    .clients .clients-btn .prev, .clients .clients-btn .next{
+        width: 20px;
+        height: 20px;
+    }
+    .contacts p.mail img{
+        display: inline;
+        height: 30px;
+    }
+    .contacts p.mail span{
+        display: none;
+    }
+
 
 }

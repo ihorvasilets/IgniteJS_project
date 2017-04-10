@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/title-icon.png" type="image/png">
+    <script src="script.js"></script>
 
 </head>
 <body>
@@ -57,12 +58,12 @@
                     <div class="slider-content">
                         <div class="container">
                             <div class="row">
-                                <div class="col-xs-1 col-sm-2 content-nav"><button class="prev"></button></div>
-                                <div class="col-xs-10 col-sm-8 col-md-8 col-lg-8 content-nav">
+                                <div class="col-xs-2 col-sm-2 content-nav"><button class="prev"></button></div>
+                                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 content-nav">
                                     <h1>BRANDING HAVE ANOTHER DEFINITION</h1>
                                     <button id="buy">BUY THIS THEME</button>
                                 </div>
-                                <div class="col-xs-1 col-sm-2 content-nav"><button class="next"></button></div>
+                                <div class="col-xs-2 col-sm-2 content-nav slide-next"><button class="next"></button></div>
                             </div>
                         </div>
                     </div>
@@ -275,7 +276,7 @@
                                     <h5>ON TIME PROJECTS</h5>
                                     <p>Sed bibendum magna erat, non porttitor quam aliquet ut. Suspendisse finibus laoreet lorem. Quisque finibus leo eu nisi aliquet pulvinar. </p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6">
+                                <div class="col-xs-12 col-sm-6 about-btm">
                                     <div class="icon" style="background-image: url(images/about-support.png);"></div>
                                     <h5>FULLY SUPPORT</h5>
                                     <p>Etiam tristique augue at porttitor congue. Nunc sed nulla quis sem aliquet mattis tincidunt quis enim. Nulla aliquet vehicula scelerisque. </p>
@@ -289,7 +290,7 @@
                                     <h5>PROFESSIONAL EXPERIENCE</h5>
                                     <p>Maecenas nec enim id turpis vestibulum molestie et in nulla. Nulla quam ligula, malesuada ac lectus eget, ornare porta turpis.</p>
                                 </div>
-                                <div class="col-xs-12 col-sm-6">
+                                <div class="col-xs-12 col-sm-6 about-btm">
                                     <div class="icon" style="background-image: url(images/about-commteam.png);"></div>
                                     <h5>COMMUNICATIVE TEAM</h5>
                                     <p>Sed diam lorem, fringilla non mi et, sagittis commodo tortor. Phasellus leo felis, efficitur sed pulvinar sit amet, dapibus vel sem. </p>
@@ -431,7 +432,7 @@
                     </div>
                 </div>
 
-                <div class="row skills-bg" style="background-color: lawngreen">
+                <div class="row skills-bg">
                     <div class="container">
                         <div class="row info-mid">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -443,19 +444,19 @@
                         <div class="row info-bottom">
                             <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
                             <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-                                <div><canvas id="canvas1" width="130" height="130"><canvas/></div>
+                                <div><canvas id="canvas1" width="130" height="130"></canvas></div>
                                 <h4>HTML & CSS</h4>
                             </div>
                             <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-                                <div><canvas id="canvas2" width="130" height="130"><canvas/></div>
+                                <div><canvas id="canvas2" width="130" height="130"></canvas></div>
                                 <h4>AI & PS</h4>
                             </div>
                             <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-                                <div><canvas id="canvas3" width="130" height="130"><canvas/></div>
+                                <div><canvas id="canvas3" width="130" height="130"></canvas></div>
                                 <h4>JS & PHP</h4>
                             </div>
                             <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
-                                <div><canvas id="canvas4" width="130" height="130"><canvas/></div>
+                                <div><canvas id="canvas4" width="130" height="130"></canvas></div>
                                 <h4>PHOTOGRAPHY</h4>
                             </div>
                             <div class="hidden-xs hidden-sm col-md-2 col-lg-2"></div>
@@ -486,10 +487,10 @@
                     <div class="row clients-btn">
                         <div class="col-xs-5"></div>
                         <div class="col-xs-1">
-                            <button class="prew"></button>
+                            <button class="prev" style="background-image: url(images/clients-left.png);"></button>
                         </div>
                         <div class="col-xs-1">
-                            <button class="next"></button>
+                            <button class="next" style="background-image: url(images/clients-right.png);"></button>
                         </div>
                         <div class="col-xs-5"></div>
                     </div>
@@ -498,7 +499,7 @@
 
             <!-- REVIEWS ------------------------------------------------------------------------------------------- -->
             <!-- --------------------------------------------------------------------------------------------------- -->
-            <section class="row reviews" style="background-color: lightgoldenrodyellow;">
+            <section class="row reviews">
                 <div class="container">
                         <div class="row">
                             <div class="hidden-xs col-sm-2 col-md-3"></div>
@@ -530,17 +531,17 @@
 
                     <div class="row info">
                         <div class="col-xs-4">
-                            <div></div>
+                            <div><img src="images/contacts-addr.png" alt="Address-Icon"></div>
                             <h4>OUR ADDRESS</h4>
                             <p><a href="https://www.google.com.ua/maps/place/Awesome+Ln,+Saugerties,+NY+12477,+%D0%A1%D0%A8%D0%90/@42.0591581,-73.9545338,17z/data=!3m1!4b1!4m5!3m4!1s0x89dda7475c0021b1:0x67c740d774326830!8m2!3d42.0591541!4d-73.9523451" target="_blanc">214 Awesome Street, NY</a></p>
                         </div>
                         <div class="col-xs-4">
-                            <div></div>
+                            <div><img src="images/contacts-mail.png" alt="Mail-Icon"></div>
                             <h4>OUR MAIL</h4>
-                            <p><a href="mailto:awesomemail@ourmail.com">awesomemail@ourmail.com</a></p>
+                            <p class="mail"><a href="mailto:awesomemail@ourmail.com"><span>awesomemail@ourmail.com</span><img src="images/send-mail.png" alt="awesomemail@ourmail.com"></a></p>
                         </div>
                         <div class="col-xs-4">
-                            <div></div>
+                            <div><img src="images/contacts-phone.png" alt="Phone-Icon"></div>
                             <h4>OUR PHONE</h4>
                             <p><a href="skype:+012345678900?call">(0)123 456 789 00</a></p>
                         </div>
@@ -553,6 +554,7 @@
             <section class="row message-form">
                 <div class="container">
                     <h2>SEND US A MESAGE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque blanditiis fuga illo iure maiores.</p>
                     <form id="form">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4">
@@ -568,7 +570,7 @@
 
                         <textarea class="form-data" style='width: 100%' id="textarea" maxlength="250" placeholder="Type your message.." required></textarea></br>
 
-                        <input type="submit" value="Send" id="submit">
+                        <input type="submit" value="Send message" id="submit">
                     </form>
                 </div>
             </section>
@@ -582,13 +584,14 @@
                 <div class="row">
                     <div class="hidden-xs col-sm-2 col-md-4 col-lg-4"></div>
                     <div class="col-xs-12 col-sm-8 col-md-4 col-lg-4">
-                        <p>&copy; Copyright 2013 Smak. All Rights Reserved</p>
+                        <p>&copy; Copyright 2013 <span>Smak</span>. All Rights Reserved</p>
                         <p>
                             <a href="http://www.facebook.com" target="_blanc"><img src="images/footer-fb.png" alt="Facebook"></a>
                             <a href="http://www.linkedin.com" target="_blanc"><img src="images/footer-dribble.png" alt="Dribble"></a>
                             <a href="https://dribbble.com/" target="_blanc"><img src="images/footer-twitter.png" alt="Twitter"></a>
                             <a href="http://plus.google.com" target="_blanc"><img src="images/footer-gplus.png" alt="Google+"></a>
                         </p>
+                        <button id="up"></button>
                     </div>
                     <div class="hidden-xs col-sm-2 col-md-4 col-lg-4"></div>
                 </div>
@@ -608,7 +611,8 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
 
 </body>
 </html>
