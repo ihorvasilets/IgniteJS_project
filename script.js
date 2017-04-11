@@ -335,8 +335,11 @@ window.onload = function () {
 
     var filterButtons = document.querySelectorAll('.works .filter li span');
     var allWorks = document.querySelectorAll('.works .preview .portfolio');
+    filterButtons[0].style.color = '#ffe600';
 
         filterButtons[0].onclick = function(){
+            this.style.color = '#ffe600';
+            filterButtons[1].style.color = filterButtons[2].style.color = filterButtons[3].style.color = filterButtons[4].style.color = '#515151';
             for(var i = 0; i < length; i++){
                 allWorks[i].style.display = 'block';
                 yellow[i].style.display = 'none';
@@ -344,6 +347,9 @@ window.onload = function () {
         }
 
         filterButtons[1].onclick = function(){
+            this.style.color = '#ffe600';
+            filterButtons[0].style.color = filterButtons[2].style.color = filterButtons[3].style.color = filterButtons[4].style.color = '#515151';
+
             var webWorks = document.querySelectorAll('.works .preview .web-design');
             for(var i = 0; i < length; i++){
                 allWorks[i].style.display = 'none';
@@ -356,6 +362,9 @@ window.onload = function () {
             }
         }
         filterButtons[2].onclick = function(){
+            this.style.color = '#ffe600';
+            filterButtons[0].style.color = filterButtons[1].style.color = filterButtons[3].style.color = filterButtons[4].style.color = '#515151';
+
             var graphWorks = document.querySelectorAll('.works .preview .graphic-design');
             for(var i = 0; i < length; i++){
                 allWorks[i].style.display = 'none';
@@ -368,6 +377,9 @@ window.onload = function () {
             }
         }
         filterButtons[3].onclick = function(){
+            this.style.color = '#ffe600';
+            filterButtons[0].style.color = filterButtons[1].style.color = filterButtons[2].style.color = filterButtons[4].style.color = '#515151';
+
             var photoWorks = document.querySelectorAll('.works .preview .photography');
             for(var i = 0; i < length; i++){
                 allWorks[i].style.display = 'none';
@@ -380,6 +392,9 @@ window.onload = function () {
             }
         }
         filterButtons[4].onclick = function(){
+            this.style.color = '#ffe600';
+            filterButtons[0].style.color = filterButtons[1].style.color = filterButtons[2].style.color = filterButtons[3].style.color = '#515151';
+
             var illustWorks = document.querySelectorAll('.works .preview .illustration');
             for(var i = 0; i < length; i++){
                 allWorks[i].style.display = 'none';
