@@ -170,6 +170,10 @@ window.onload = function () {
     var slideText = document.querySelectorAll(".slider h1")[0];
     var slide = document.getElementsByClassName("slider")[0];
 
+    if (document.documentElement.clientWidth <= 500){
+        slideButton[0].style.backgroundImage = 'url(images/sli.png)';
+        slideButton[2].style.backgroundImage = 'url(images/sli2.png)';
+    }
 
     function autoslide() {
         if (i <= 3){
