@@ -555,22 +555,27 @@
                 <div class="container">
                     <h2>SEND US A MESAGE</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium atque blanditiis fuga illo iure maiores.</p>
-                    <form id="form">
+                    <form id="form" action="">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4">
-                                <input type="text" class="form-data" id="name" placeholder="Name" size="30" maxlength="30" required>
+                                <input type="text" class="form-data" id="name" placeholder="Name" size="30" maxlength="30">
+                                <div class="formErr"></div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
-                                <input type="email" class="form-data" placeholder="E-mail" size="30" maxlength="30" id="mail" required>
+                                <input type="email" class="form-data" placeholder="E-mail" size="30" maxlength="30" id="mail">
+                                <div class="formErr"></div>
                             </div>
                             <div class="col-xs-12 col-sm-4">
-                                <input type="text" class="form-data" id="subject"  placeholder="Subject" size="30" maxlength="30" required>
+                                <input type="text" class="form-data" id="subject"  placeholder="Subject" size="30" maxlength="30">
+                                <div class="formErr"></div>
                             </div>
                         </div>
 
-                        <textarea class="form-data" style='width: 100%' id="textarea" maxlength="250" placeholder="Type your message.." required></textarea></br>
+                        <textarea class="form-data" style='width: 100%' id="textarea" maxlength="250" placeholder="Type your message.."></textarea></br>
 
+                        <div class="formErr"></div>
                         <input type="submit" value="Send message" id="submit">
+
                     </form>
                 </div>
             </section>

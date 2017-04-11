@@ -673,7 +673,10 @@ section.reviews ul li{
     padding-top: 10px;
 }
 
-
+.message-form .formErr {
+    color: white;
+    text-decoration: underline;
+}
 
 /*--- FOOTER -------------------------------------------------*/
 footer{

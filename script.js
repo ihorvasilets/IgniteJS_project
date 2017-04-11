@@ -249,7 +249,7 @@ window.onload = function () {
             this.style.borderRadius = "57px";
             this.style.backgroundSize = "44%"
             this.style.marginTop = '40px';
-            servHeader[j].style.marginTop = '20px';
+
         }
 
         services[j].onmouseleave = function(){
@@ -258,7 +258,7 @@ window.onload = function () {
             this.style.borderRadius = "52px";
             this.style.backgroundSize = "40%";
             this.style.marginTop = '50px';
-            servHeader[j].style.marginTop = '25px';
+
         }
 
     }
@@ -882,29 +882,79 @@ window.onload = function () {
         this.style.color = "#ffe600";
     }
 
+
+
+
+
+
+//------------------------------------------------------------------------------
+//----- VALIDATION -------------------------------------------------------------
+
+    var name = document.getElementById('name');
+    var email = document.getElementById('mail');
+    var subject = document.getElementById('subject');
+    var message = document.getElementById('textarea');
+    var errorText = document.getElementsByClassName('formErr');
+
+    var submit = document.getElementById('submit');
+    var errors = false;
+
+    name.addEventListener('keydown', function () {
+        if(name.value.match(/[^a-zA-Z]/g) != null){
+            errorText[0].innerHTML = 'Допускаются только символы английского алфавита';
+            errors = true;
+        }
+        else{;
+            errorText[0].innerHTML = '';
+            errors = false;
+        }
+
+    });
+
+
+    email.addEventListener('keydown', function () {
+        if(email.value.match(/[^a-zA-Z0-9_@]/g) != null){
+            errorText[1].innerHTML = "Допускаются только символы английского алфавита, цифры, знаки '_'' и '@'";
+            errors = true;
+        }
+        else{;
+            errorText[1].innerHTML = '';
+            errors = false;
+        }
+
+    });
+
+    subject.addEventListener('keydown', function () {
+        if(subject.value.match(/[^a-zA-Z0-9]/g) != null){
+            errorText[2].innerHTML = "Допускаются только символы английского алфавита и цифры";
+            errors = true;
+        }
+        else{;
+            errorText[2].innerHTML = '';
+            errors = false;
+        }
+
+    });
+
+    submit.onclick = function (e) {
+        if(errors == true){
+           e.preventDefault();
+           errorText[3].innerHTML = "В формах присутствуют ошибки";
+        }
+        else if(name.value == '' || email.value == '' || subject.value == '' || message.value == ''){
+            e.preventDefault();
+            errorText[3].innerHTML = "Все поля должны быть заполнены";
+        }
+
+    };
+
+
+
+
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
