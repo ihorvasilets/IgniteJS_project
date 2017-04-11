@@ -965,12 +965,7 @@ footer button#up{
         padding-left: 0;
         padding-right: 0;
     }
-    .slider .slider-content .slide-prev{
-        background-image: url(images/slider-left-iphone.png);
-    }
-    .slider .slider-content .slide-next{
-        background-image: url(images/slider-right-iphone.png);
-    }
+
     .slider .slider-content .content-nav .prev, .slider .slider-content .content-nav .next{
         margin-top: 50px;
         width: 12px;
