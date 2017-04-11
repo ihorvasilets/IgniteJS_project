@@ -286,6 +286,34 @@ window.onload = function () {
 
     }
 
+
+
+
+//-----------------------------------------------------------------------------
+//-----ABOUT US---------------------------------------------------------------
+
+    var about = document.querySelectorAll(".about .description .icon");
+
+    for (var j = 0; j < about.length; j++){
+
+        about[j].onmouseover = function(){
+            this.style.height = "77px";
+            this.style.width = "77px";
+            this.style.borderRadius = "39px";
+            this.style.top = '7px';
+
+        }
+
+        about[j].onmouseleave = function(){
+            this.style.height = "70px";
+            this.style.width = "70px";
+            this.style.borderRadius = "35px";
+            this.style.top = '10px';
+
+        }
+
+    }
+
 //-----------------------------------------------------------------------------
 //-----PORTFOLIO---------------------------------------------------------------
 
